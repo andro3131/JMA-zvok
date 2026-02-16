@@ -23,7 +23,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280993/logo-jma2_jipwcw.png"
+              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280993/logo-jma3_qkbzwr.png"
               alt="JMAzvok"
               width={182}
               height={52}
