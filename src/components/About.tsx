@@ -51,29 +51,28 @@ export default function About() {
               O nas
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
-              Družinski duo z{" "}
+              Družinsko podjetje s{" "}
               <span className="text-accent">strastjo do zvoka</span>
             </h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                Sva Jaka in Andrej — oče in sin, ki naju druži ljubezen do
-                glasbe in profesionalnega zvoka. Pod imenom JMA-ZVOK skupaj
-                ozvočujeva prireditve po Dolenjski in širše po Sloveniji.
+                Smo družinsko podjetje z dolgoletnimi izkušnjami v svetu zvoka
+                in glasbe. Pod imenom JMA-ZVOK ozvočujemo prireditve po
+                Dolenjski in širše po Sloveniji.
               </p>
               <p>
                 Naša prednost je{" "}
                 <span className="text-text-primary font-medium">
                   osebni pristop
                 </span>
-                . Na vsak dogodek prideva sama, se posvetiva vašim željam in
-                poskrbiva, da zvok brezhibno deluje od začetka do konca. Ker sva
-                majhen tim, sva fleksibilna in se hitro prilagodiva vašim
+                . Vsakemu dogodku se posvetimo v celoti — od načrtovanja do
+                izvedbe. Smo fleksibilni in se hitro prilagodimo vašim
                 potrebam.
               </p>
               <p>
-                Poleg ozvočenja ponujamo tudi profesionalno video snemanje v 4K
-                kvaliteti ter možnost studijskega snemanja v našem snemalnem
-                studiu{" "}
+                Poleg ozvočenja ponujamo tudi profesionalno osvetlitev, video
+                snemanje v 4K kvaliteti ter možnost studijskega snemanja v
+                našem snemalnem studiu{" "}
                 <a
                   href="https://www.studio-mars.com"
                   target="_blank"
