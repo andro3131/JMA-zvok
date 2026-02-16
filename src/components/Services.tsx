@@ -29,42 +29,15 @@ const services = [
     ),
   },
   {
-    title: "Video snemanje",
+    title: "Snemanje na prireditvah",
     description:
-      "Profesionalno video snemanje prireditev v 4K kvaliteti. Obdelava videa in možnost kombinacije s profesionalno posnetim zvokom za najboljši končni izdelek.",
+      "Vsak kanal snemamo posebej (multitrack), kar omogoča vrhunsko post-produkcijo v studiu in kasnejše odpravljanje morebitnih napak. Rezultat je profesionalen posnetek, kot bi bil posnet v studiu.",
     features: [
-      "4K video snemanje",
-      "Profesionalna obdelava videa",
-      "Kombinacija s posnetim zvokom",
-      "Snemanje nastopov in dogodkov",
-      "Končni izdelek po meri",
-    ],
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Snemanje v studiu",
-    description:
-      "V našem snemalnem studiu Studio MARS ponujamo profesionalno snemanje glasbe, podcastov in voiceoverjev. Možnost snemanja v živo na prireditvah s post-produkcijo.",
-    features: [
-      "Profesionalni snemalni studio",
-      "Snemanje glasbe in podcastov",
-      "Snemanje v živo na prireditvah",
-      "Miks in mastering",
-      "Post-produkcija zvoka",
+      "Večkanalno (multitrack) snemanje",
+      "Vsak mikrofon posnet ločeno",
+      "Post-produkcija in miks v studiu",
+      "Možnost kasnejšega popravljanja napak",
+      "Profesionalen končni posnetek",
     ],
     icon: (
       <svg
@@ -82,7 +55,34 @@ const services = [
       </svg>
     ),
     link: "https://www.studio-mars.com",
-    linkLabel: "Obiščite Studio MARS",
+    linkLabel: "Druge studijske storitve — Studio MARS",
+  },
+  {
+    title: "Video snemanje prireditev",
+    description:
+      "Profesionalno video snemanje prireditev v 4K kvaliteti s kasnejšo montažo. Možnost kombinacije s profesionalno posnetim zvokom ter izdelava nosilcev za trajen spomin.",
+    features: [
+      "4K video snemanje",
+      "Profesionalna montaža videa",
+      "Kombinacija s posnetim zvokom",
+      "Izdelava nosilcev (DVD, USB)",
+      "Končni izdelek po meri",
+    ],
+    icon: (
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+        />
+      </svg>
+    ),
   },
 ];
 
