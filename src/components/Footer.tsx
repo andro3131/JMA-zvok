@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/logo-jma_whwno7.png"
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280993/logo-jma2_jipwcw.png"
                 alt="JMAzvok"
                 width={156}
                 height={46}
