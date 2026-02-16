@@ -25,9 +25,9 @@ export default function Header() {
             <Image
               src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/logo-jma_whwno7.png"
               alt="JMAzvok"
-              width={140}
-              height={40}
-              className="h-8 sm:h-10 w-auto"
+              width={182}
+              height={52}
+              className="h-10 sm:h-13 w-auto"
               priority
             />
           </Link>

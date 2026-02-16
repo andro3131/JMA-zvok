@@ -12,9 +12,9 @@ export default function Footer() {
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/logo-jma_whwno7.png"
                 alt="JMAzvok"
-                width={120}
-                height={35}
-                className="h-8 w-auto"
+                width={156}
+                height={46}
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-text-secondary text-sm leading-relaxed">
