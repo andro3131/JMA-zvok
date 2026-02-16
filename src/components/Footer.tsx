@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,13 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center mb-4">
-              <span className="text-2xl font-black tracking-tight text-text-primary">
-                JMA
-              </span>
-              <span className="text-2xl font-black tracking-tight text-accent">
-                zvok
-              </span>
+            <div className="mb-4">
+              <Image
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/logo-jma_whwno7.png"
+                alt="JMAzvok"
+                width={120}
+                height={35}
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-text-secondary text-sm leading-relaxed">
               Profesionalno ozvočenje in video snemanje za vaše posebne

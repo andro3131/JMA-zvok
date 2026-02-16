@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     "Slovenija",
     "JMAzvok",
   ],
+  icons: {
+    icon: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/fav-jma_txtgew.png",
+    apple: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/fav-jma_txtgew.png",
+  },
   openGraph: {
     title: "JMAzvok | Profesionalno ozvočenje dogodkov",
     description:

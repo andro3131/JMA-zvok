@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/#storitve", label: "Storitve" },
@@ -20,15 +21,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex items-center">
-              <span className="text-2xl sm:text-3xl font-black tracking-tight text-text-primary">
-                JMA
-              </span>
-              <span className="text-2xl sm:text-3xl font-black tracking-tight text-accent">
-                zvok
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771280487/logo-jma_whwno7.png"
+              alt="JMAzvok"
+              width={140}
+              height={40}
+              className="h-8 sm:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
