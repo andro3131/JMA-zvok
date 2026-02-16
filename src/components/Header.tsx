@@ -26,7 +26,7 @@ export default function Header() {
                 JMA
               </span>
               <span className="text-2xl sm:text-3xl font-black tracking-tight text-accent">
-                -ZVOK
+                zvok
               </span>
             </div>
           </Link>

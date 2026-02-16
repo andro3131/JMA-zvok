@@ -27,7 +27,7 @@ export default function Equipment() {
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273247/20251125_185323_uo5ss0.jpg"
-                alt="JMA-ZVOK zvočni sistem"
+                alt="JMAzvok zvočni sistem"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -48,7 +48,7 @@ export default function Equipment() {
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273279/20251021_185731_aiq6hk.jpg"
-                alt="JMA-ZVOK mešalna miza"
+                alt="JMAzvok mešalna miza"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -69,7 +69,7 @@ export default function Equipment() {
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg"
-                alt="JMA-ZVOK mikrofoni"
+                alt="JMAzvok mikrofoni"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -90,7 +90,7 @@ export default function Equipment() {
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771274951/20250706_013859_jdnrgp.jpg"
-                alt="JMA-ZVOK video oprema"
+                alt="JMAzvok video oprema"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />

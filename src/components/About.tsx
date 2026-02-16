@@ -11,7 +11,7 @@ export default function About() {
               <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275064/20250529_182203_qby9ct.jpg"
-                  alt="JMA-ZVOK oprema"
+                  alt="JMAzvok oprema"
                   fill
                   className="object-cover"
                 />
@@ -19,7 +19,7 @@ export default function About() {
               <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275026/20250531_185810_fzqhj8.jpg"
-                  alt="JMA-ZVOK na prireditvi"
+                  alt="JMAzvok na prireditvi"
                   fill
                   className="object-cover"
                 />
@@ -29,7 +29,7 @@ export default function About() {
               <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273265/20251122_170703_k7moi9.jpg"
-                  alt="JMA-ZVOK postavitev"
+                  alt="JMAzvok postavitev"
                   fill
                   className="object-cover"
                 />
@@ -37,7 +37,7 @@ export default function About() {
               <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275003/20250531_203559_kwlenz.jpg"
-                  alt="JMA-ZVOK prireditev"
+                  alt="JMAzvok prireditev"
                   fill
                   className="object-cover"
                 />
@@ -57,7 +57,7 @@ export default function About() {
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
                 Smo družinsko podjetje z dolgoletnimi izkušnjami v svetu zvoka
-                in glasbe. Pod imenom JMA-ZVOK ozvočujemo prireditve po
+                in glasbe. Pod imenom JMAzvok ozvočujemo prireditve po
                 Dolenjski in širše po Sloveniji.
               </p>
               <p>

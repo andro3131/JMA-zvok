@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const novica = await getNovicaBySlug(slug);
 
   if (!novica) {
-    return { title: "Novica ni najdena | JMA-ZVOK" };
+    return { title: "Novica ni najdena | JMAzvok" };
   }
 
   return {
-    title: `${novica.title} | JMA-ZVOK`,
+    title: `${novica.title} | JMAzvok`,
     description: novica.excerpt,
   };
 }

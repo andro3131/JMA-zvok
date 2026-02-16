@@ -12,7 +12,7 @@ export default function Footer() {
                 JMA
               </span>
               <span className="text-2xl font-black tracking-tight text-accent">
-                -ZVOK
+                zvok
               </span>
             </div>
             <p className="text-text-secondary text-sm leading-relaxed">
@@ -112,7 +112,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-text-muted text-xs">
-            &copy; {new Date().getFullYear()} JMA-ZVOK. Vse pravice pridržane.
+            &copy; {new Date().getFullYear()} JMAzvok. Vse pravice pridržane.
           </p>
           <Link
             href="https://www.studio-mars.com"

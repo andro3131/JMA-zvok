@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "JMA-ZVOK | Profesionalno ozvočenje dogodkov",
+  title: "JMAzvok | Profesionalno ozvočenje dogodkov",
   description:
     "Profesionalno ozvočenje in video snemanje za poroke, praznovanja, občinske prireditve in več. Družinski pristop z osebno odgovornostjo za kakovost. Dolenjska in celotna Slovenija.",
   keywords: [
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     "video snemanje",
     "Dolenjska",
     "Slovenija",
-    "JMA-ZVOK",
+    "JMAzvok",
   ],
   openGraph: {
-    title: "JMA-ZVOK | Profesionalno ozvočenje dogodkov",
+    title: "JMAzvok | Profesionalno ozvočenje dogodkov",
     description:
       "Profesionalno ozvočenje in video snemanje za poroke, praznovanja, občinske prireditve in več.",
     type: "website",

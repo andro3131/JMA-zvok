@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273162/20260213_215234_nzfknc.jpg"
-          alt="JMA-ZVOK ozvočenje prireditve"
+          alt="JMAzvok ozvočenje prireditve"
           fill
           className="object-cover"
           priority

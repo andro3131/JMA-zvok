@@ -3,8 +3,8 @@ import Image from "next/image";
 import { getAllNovice } from "@/lib/novice";
 
 export const metadata = {
-  title: "Novice | JMA-ZVOK",
-  description: "Zadnje novice in utrinki s prireditev JMA-ZVOK.",
+  title: "Novice | JMAzvok",
+  description: "Zadnje novice in utrinki s prireditev JMAzvok.",
 };
 
 export default function NovicePage() {
