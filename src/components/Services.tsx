@@ -29,7 +29,7 @@ const services = [
     ),
   },
   {
-    title: "Snemanje na prireditvah",
+    title: "Snemanje v živo",
     description:
       "Vsak kanal snemamo posebej (multitrack), kar omogoča vrhunsko post-produkcijo v studiu in kasnejše odpravljanje morebitnih napak. Rezultat je profesionalen posnetek, kot bi bil posnet v studiu.",
     features: [
