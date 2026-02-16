@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 bg-accent rounded-full" />
             <span className="text-accent text-sm font-medium">
-              Ozvočenje &bull; Video &bull; Snemanje
+              Ozvočenje &bull; Audio &amp; video snemanje
             </span>
           </div>
         </div>
