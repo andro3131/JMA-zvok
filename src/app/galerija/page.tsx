@@ -45,6 +45,30 @@ const images = [
     src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg",
     alt: "Prireditev - maj 2025",
   },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324940/IMG_9162_kti2og.jpg",
+    alt: "Prireditev",
+  },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324941/IMG_9165_mkebup.jpg",
+    alt: "Prireditev",
+  },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324942/IMG_9156_i7yogr.jpg",
+    alt: "Prireditev",
+  },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324944/IMG_9155_czf75e.jpg",
+    alt: "Prireditev",
+  },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324951/IMG_9170_lp1kk8.jpg",
+    alt: "Prireditev",
+  },
+  {
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324949/IMG_9154_rmvomk.jpg",
+    alt: "Prireditev",
+  },
 ];
 
 export default function GalerijaPage() {
