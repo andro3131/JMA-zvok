@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 interface NovicaData {
@@ -265,8 +266,8 @@ export default function NoviceModal({
         </div>
       )}
 
-      {/* Modal */}
-      {active && (
+      {/* Modal via portal to escape transform stacking context */}
+      {active && createPortal(
         <div
           className="fixed inset-0 z-50 bg-bg-primary/95 backdrop-blur-md overflow-y-auto p-4"
           onClick={close}
@@ -305,7 +306,8 @@ export default function NoviceModal({
             {/* Media gallery */}
             <Gallery media={allMedia} title={active.title} />
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
