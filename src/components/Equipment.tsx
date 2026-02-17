@@ -86,21 +86,21 @@ export default function Equipment() {
             </div>
           </div>
 
-          {/* Microphones */}
+          {/* Microphones & equipment */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
               src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
-              alt="JMAzvok mikrofoni"
+              alt="JMAzvok mikrofoni in oprema"
               fill
               className="object-cover scale-110 group-hover:scale-[1.15] transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white mb-1">Mikrofoni</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Mikrofoni &amp; oprema</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                Širok nabor profesionalnih mikrofonov za vsako situacijo — od
-                brezžičnih ročnih in naglavnih do studijskih kondenzatorskih
-                mikrofonov. Iz lastnega snemalnega studia.
+                Mikrofoni Shure, AKG, Sennheiser, Electro‑Voice in ostali.
+                MacBook Pro 16 M4 in iPad Pro 11 M4 za brezžično upravljanje
+                in snemanje.
               </p>
             </div>
           </div>
