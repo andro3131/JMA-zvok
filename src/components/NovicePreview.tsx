@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllNovice } from "@/lib/novice";
+import ScrollReveal from "./ScrollReveal";
 
 export default function NovicePreview() {
   const novice = getAllNovice().slice(0, 2);
@@ -11,6 +12,7 @@ export default function NovicePreview() {
     <section id="novice" className="py-24 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold uppercase tracking-wider">
             Novice
@@ -22,8 +24,10 @@ export default function NovicePreview() {
             Spremljajte naše najnovejše priredbe in novosti.
           </p>
         </div>
+        </ScrollReveal>
 
         {/* News cards */}
+        <ScrollReveal delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {novice.map((novica) => (
             <Link
@@ -77,6 +81,7 @@ export default function NovicePreview() {
             </Link>
           ))}
         </div>
+        </ScrollReveal>
 
         {/* CTA */}
         <div className="text-center mt-10">

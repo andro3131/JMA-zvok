@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedCounter from "./AnimatedCounter";
 
 export default function Hero() {
   return (
@@ -34,15 +35,15 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto mb-10 animate-fade-in-up animate-delay-200">
-          Profesionalno ozvočenje in video snemanje za poroke, praznovanja,
-          občinske prireditve in druge posebne trenutke. Osebni pristop,
-          kristalno čist zvok.
+          Profesionalno ozvočenje in audio ter video snemanje za poroke,
+          praznovanja, občinske prireditve in druge posebne trenutke. Osebni
+          pristop, kristalno čist zvok.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animate-delay-300">
           <Link
             href="#kontakt"
-            className="bg-accent hover:bg-accent-light text-bg-primary font-bold px-8 py-4 rounded-lg transition-all duration-200 text-lg hover:scale-105"
+            className="bg-accent hover:bg-accent-light text-bg-primary font-bold px-8 py-4 rounded-lg transition-all duration-200 text-lg hover:scale-105 animate-glow-pulse"
           >
             Pošljite povpraševanje
           </Link>
@@ -56,20 +57,30 @@ export default function Hero() {
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 mt-20 animate-fade-in-up animate-delay-400">
-          {[
-            { value: "50+", label: "Izvedenih dogodkov" },
-            { value: "100%", label: "Zadovoljnih strank" },
-            { value: "10+", label: "Let izkušenj" },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <div className="text-2xl sm:text-3xl font-bold text-accent">
-                {stat.value}
-              </div>
-              <div className="text-xs sm:text-sm text-text-muted mt-1">
-                {stat.label}
-              </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-accent">
+              <AnimatedCounter end={50} suffix="+" />
             </div>
-          ))}
+            <div className="text-xs sm:text-sm text-text-muted mt-1">
+              Izvedenih dogodkov
+            </div>
+          </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-accent">
+              <AnimatedCounter end={100} suffix="%" />
+            </div>
+            <div className="text-xs sm:text-sm text-text-muted mt-1">
+              Zadovoljnih strank
+            </div>
+          </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-accent">
+              <AnimatedCounter end={17} suffix="+" />
+            </div>
+            <div className="text-xs sm:text-sm text-text-muted mt-1">
+              Let izkušenj
+            </div>
+          </div>
         </div>
       </div>
 

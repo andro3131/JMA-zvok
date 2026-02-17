@@ -1,10 +1,12 @@
 import Image from "next/image";
+import ScrollReveal from "./ScrollReveal";
 
 export default function Equipment() {
   return (
     <section id="oprema" className="py-24 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold uppercase tracking-wider">
             Oprema
@@ -19,11 +21,13 @@ export default function Equipment() {
             posebej.
           </p>
         </div>
+        </ScrollReveal>
 
         {/* Equipment showcase */}
+        <ScrollReveal delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Main PA */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273247/20251125_185323_uo5ss0.jpg"
@@ -44,7 +48,7 @@ export default function Equipment() {
           </div>
 
           {/* Mixing */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273279/20251021_185731_aiq6hk.jpg"
@@ -65,7 +69,7 @@ export default function Equipment() {
           </div>
 
           {/* Microphones */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg"
@@ -86,7 +90,7 @@ export default function Equipment() {
           </div>
 
           {/* Video */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771274951/20250706_013859_jdnrgp.jpg"
@@ -106,8 +110,10 @@ export default function Equipment() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
 
         {/* Brands */}
+        <ScrollReveal delay={200}>
         <div className="mt-16 text-center">
           <p className="text-text-muted text-sm mb-6">
             Zaupamo opremi vodilnih svetovnih proizvajalcev
@@ -125,6 +131,7 @@ export default function Equipment() {
             )}
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 const services = [
   {
@@ -118,28 +119,31 @@ export default function Services() {
     <section id="storitve" className="py-24 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <span className="text-accent text-sm font-semibold uppercase tracking-wider">
-            Naše storitve
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-4">
-            Vse za vaš{" "}
-            <span className="text-accent">popoln dogodek</span>
-          </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto">
-            Od profesionalnega ozvočenja do video snemanja, osvetlitve in
-            studijskega dela — poskrbimo za celotno zvočno in vizualno izkušnjo
-            vašega dogodka.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <span className="text-accent text-sm font-semibold uppercase tracking-wider">
+              Naše storitve
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-4">
+              Vse za vaš{" "}
+              <span className="text-accent">popoln dogodek</span>
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto">
+              Od profesionalnega ozvočenja do video snemanja, osvetlitve in
+              studijskega dela — poskrbimo za celotno zvočno in vizualno izkušnjo
+              vašega dogodka.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="bg-bg-card border border-border rounded-2xl p-8 hover:border-accent/30 transition-all duration-300 group"
-            >
+        <ScrollReveal delay={100}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="service-card bg-bg-card border border-border rounded-2xl p-8 hover:border-accent/30 card-hover-lift group"
+              >
               <div className="text-accent mb-5 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
@@ -192,10 +196,11 @@ export default function Services() {
                     />
                   </svg>
                 </Link>
-              )}
-            </div>
-          ))}
-        </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
 
       </div>
     </section>

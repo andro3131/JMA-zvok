@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 const previewImages = [
   {
@@ -59,6 +60,7 @@ export default function GalleryPreview() {
     <section id="galerija" className="py-24 bg-bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
+        <ScrollReveal>
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold uppercase tracking-wider">
             Galerija
@@ -71,8 +73,10 @@ export default function GalleryPreview() {
             Vsaka slika pripoveduje svojo zgodbo o nepozabnih trenutkih.
           </p>
         </div>
+        </ScrollReveal>
 
         {/* Image grid */}
+        <ScrollReveal delay={100}>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {previewImages.map((image, index) => (
             <div
@@ -104,6 +108,7 @@ export default function GalleryPreview() {
             </div>
           ))}
         </div>
+        </ScrollReveal>
 
         {/* CTA */}
         <div className="text-center mt-10">

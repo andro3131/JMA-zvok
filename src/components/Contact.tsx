@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import ScrollReveal from "./ScrollReveal";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -36,6 +37,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact info */}
+          <ScrollReveal>
           <div>
             <span className="text-accent text-sm font-semibold uppercase tracking-wider">
               Kontakt
@@ -153,8 +155,10 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
 
           {/* Contact form */}
+          <ScrollReveal delay={200}>
           <div className="bg-bg-card border border-border rounded-2xl p-8">
             {status === "sent" ? (
               <div className="text-center py-12">
@@ -296,6 +300,7 @@ export default function Contact() {
               </form>
             )}
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
