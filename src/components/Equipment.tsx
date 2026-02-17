@@ -206,27 +206,59 @@ export default function Equipment() {
             </p>
 
             {/* Images */}
-            <div className="grid grid-cols-3 gap-3 mb-10">
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mb-10">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273247/20251125_185323_uo5ss0.jpg"
-                  alt="Zvočni sistem"
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355095/Screenshot_2026-02-17_at_20.01.22_yxjkev.png"
+                  alt="Oprema 1"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273279/20251021_185731_aiq6hk.jpg"
-                  alt="Mešalna miza"
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355094/Screenshot_2026-02-17_at_19.57.53_tmo7qn.png"
+                  alt="Oprema 2"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg"
-                  alt="Mikrofoni"
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355091/Screenshot_2026-02-17_at_19.58.23_a3v9f2.png"
+                  alt="Oprema 3"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355089/Screenshot_2026-02-17_at_19.59.41_pjfauz.png"
+                  alt="Oprema 4"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355087/Screenshot_2026-02-17_at_20.02.11_r8oxhb.png"
+                  alt="Oprema 5"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355082/Screenshot_2026-02-17_at_19.58.48_o3xtib.png"
+                  alt="Oprema 6"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355081/Screenshot_2026-02-17_at_19.57.23_cr7ibm.png"
+                  alt="Oprema 7"
                   fill
                   className="object-cover"
                 />
