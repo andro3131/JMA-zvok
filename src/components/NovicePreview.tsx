@@ -4,7 +4,7 @@ import { getAllNovice } from "@/lib/novice";
 import ScrollReveal from "./ScrollReveal";
 
 export default function NovicePreview() {
-  const novice = getAllNovice().slice(0, 2);
+  const novice = getAllNovice().slice(0, 3);
 
   if (novice.length === 0) return null;
 
@@ -28,7 +28,7 @@ export default function NovicePreview() {
 
         {/* News cards */}
         <ScrollReveal delay={100}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {novice.map((novica) => (
             <Link
               key={novica.slug}
