@@ -70,10 +70,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">E-pošta</h3>
                   <a
-                    href="mailto:jmazvok@gmail.com"
+                    href="mailto:jma.zvok@gmail.com"
                     className="text-text-secondary hover:text-accent transition-colors"
                   >
-                    jmazvok@gmail.com
+                    jma.zvok@gmail.com
                   </a>
                 </div>
               </div>
@@ -103,6 +103,17 @@ export default function Contact() {
                   >
                     041 758 572
                   </a>
+                  <span className="text-text-muted mx-1">·</span>
+                  <span className="text-text-muted text-sm">Andrej</span>
+                  <br />
+                  <a
+                    href="tel:+38641262566"
+                    className="text-text-secondary hover:text-accent transition-colors"
+                  >
+                    041 262 566
+                  </a>
+                  <span className="text-text-muted mx-1">·</span>
+                  <span className="text-text-muted text-sm">Jaka</span>
                 </div>
               </div>
 
