@@ -79,7 +79,7 @@ export default function Equipment() {
           {/* Microphones */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357167/14-14_dfc8bq_xui4vh.jpg"
+              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
               alt="JMAzvok mikrofoni"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
