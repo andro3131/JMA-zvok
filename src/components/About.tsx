@@ -8,7 +8,7 @@ export default function About() {
           {/* Images */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
+              <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden animate-float-1">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275064/20250529_182203_qby9ct.jpg"
                   alt="JMAzvok oprema"
@@ -16,7 +16,7 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
+              <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden animate-float-2">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275026/20250531_185810_fzqhj8.jpg"
                   alt="JMAzvok na prireditvi"
@@ -26,7 +26,7 @@ export default function About() {
               </div>
             </div>
             <div className="space-y-4 pt-8">
-              <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
+              <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden animate-float-3">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273265/20251122_170703_k7moi9.jpg"
                   alt="JMAzvok postavitev"
@@ -34,7 +34,7 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
+              <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden animate-float-4">
                 <Image
                   src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275003/20250531_203559_kwlenz.jpg"
                   alt="JMAzvok prireditev"
