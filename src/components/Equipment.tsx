@@ -250,6 +250,14 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">dB Technologies</strong> — aktivni zvočniki</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">LD Systems DAVE 15 G3</strong> — kompaktni aktivni sistem</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
                     <span><strong className="text-text-primary">the box PA 302 A</strong> — aktivni monitorji (odrski monitoring)</span>
                   </li>
                 </ul>
@@ -264,6 +272,10 @@ export default function Equipment() {
                   Mešalna miza
                 </h3>
                 <ul className="space-y-2 text-sm text-text-secondary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Behringer X32</strong> — 32-kanalni digitalni mikser</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
                     <span><strong className="text-text-primary">Behringer X Air XR18</strong> — 18-kanalni digitalni mikser, brezžično upravljanje, večkanalno snemanje</span>
@@ -302,7 +314,11 @@ export default function Equipment() {
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>Profesionalna 4K kamera</span>
+                    <span><strong className="text-text-primary">Panasonic Lumix GH7</strong> — 4K kamera</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">DJI Mini Pro 3</strong> — dron za snemanje iz zraka</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
