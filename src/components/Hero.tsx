@@ -36,8 +36,9 @@ export default function Hero() {
 
         <p className="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto mb-10 animate-fade-in-up animate-delay-200">
           Profesionalno ozvočenje in audio ter video snemanje za poroke,
-          praznovanja, občinske prireditve in druge posebne trenutke. Osebni
-          pristop, kristalno čist zvok.
+          praznovanja, občinske prireditve in druge posebne trenutke.
+          <br />
+          Osebni pristop, kristalno čist zvok.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animate-delay-300">
