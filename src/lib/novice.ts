@@ -43,6 +43,40 @@ export function getAllNovice(): NovicaData[] {
   );
 }
 
+export async function getAllNoviceWithContent(): Promise<NovicaData[]> {
+  if (!fs.existsSync(noviceDirectory)) {
+    return [];
+  }
+
+  const fileNames = fs.readdirSync(noviceDirectory);
+  const allNovice = await Promise.all(
+    fileNames
+      .filter((fileName) => fileName.endsWith(".md"))
+      .map(async (fileName) => {
+        const slug = fileName.replace(/\.md$/, "");
+        const fullPath = path.join(noviceDirectory, fileName);
+        const fileContents = fs.readFileSync(fullPath, "utf8");
+        const { data, content } = matter(fileContents);
+
+        const processedContent = await remark().use(html, { allowDangerousHtml: true }).process(content);
+        const contentHtml = processedContent.toString();
+
+        return {
+          slug,
+          title: data.title || "",
+          date: data.date || "",
+          excerpt: data.excerpt || "",
+          image: data.image || undefined,
+          contentHtml,
+        };
+      })
+  );
+
+  return allNovice.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+}
+
 export async function getNovicaBySlug(
   slug: string
 ): Promise<NovicaData | null> {
