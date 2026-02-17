@@ -12,43 +12,79 @@ interface NovicaData {
   contentHtml?: string;
 }
 
-function extractImages(html: string): { textHtml: string; imageUrls: string[] } {
-  const imageUrls: string[] = [];
-  const textHtml = html.replace(/<p>\s*<img[^>]*src="([^"]*)"[^>]*>\s*<\/p>/g, (_, src) => {
-    imageUrls.push(src);
-    return "";
-  }).replace(/<img[^>]*src="([^"]*)"[^>]*>/g, (_, src) => {
-    imageUrls.push(src);
-    return "";
-  });
-  return { textHtml, imageUrls };
+interface MediaItem {
+  type: "image" | "video";
+  src: string;
 }
 
-function Gallery({ images, title }: { images: string[]; title: string }) {
+function extractMedia(html: string): { textHtml: string; media: MediaItem[] } {
+  const media: MediaItem[] = [];
+  let textHtml = html;
+
+  // Extract videos
+  textHtml = textHtml.replace(/<video[^>]*src="([^"]*)"[^>]*>[\s\S]*?<\/video>/g, (_, src) => {
+    media.push({ type: "video", src });
+    return "";
+  });
+  textHtml = textHtml.replace(/<video[^>]*src="([^"]*)"[^>]*\/?\s*>/g, (_, src) => {
+    media.push({ type: "video", src });
+    return "";
+  });
+
+  // Extract images wrapped in <p>
+  textHtml = textHtml.replace(/<p>\s*<img[^>]*src="([^"]*)"[^>]*>\s*<\/p>/g, (_, src) => {
+    media.push({ type: "image", src });
+    return "";
+  });
+  // Extract remaining images
+  textHtml = textHtml.replace(/<img[^>]*src="([^"]*)"[^>]*>/g, (_, src) => {
+    media.push({ type: "image", src });
+    return "";
+  });
+
+  return { textHtml, media };
+}
+
+function Gallery({ media, title }: { media: MediaItem[]; title: string }) {
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
     setSelected(0);
-  }, [images]);
+  }, [media]);
 
-  if (images.length === 0) return null;
+  if (media.length === 0) return null;
+
+  const current = media[selected];
 
   return (
     <div>
-      {/* Large image */}
-      <div className="relative w-full h-64 sm:h-96 rounded-2xl overflow-hidden mb-3">
-        <Image
-          src={images[selected]}
-          alt={`${title} ${selected + 1}`}
-          fill
-          className="object-cover"
-        />
+      {/* Large view */}
+      <div className="relative w-full rounded-2xl overflow-hidden mb-3">
+        {current.type === "video" ? (
+          <video
+            key={current.src}
+            src={current.src}
+            controls
+            playsInline
+            className="w-full rounded-2xl"
+            style={{ maxHeight: "24rem" }}
+          />
+        ) : (
+          <div className="relative w-full h-64 sm:h-96">
+            <Image
+              src={current.src}
+              alt={`${title} ${selected + 1}`}
+              fill
+              className="object-cover"
+            />
+          </div>
+        )}
       </div>
 
       {/* Thumbnails */}
-      {images.length > 1 && (
+      {media.length > 1 && (
         <div className="flex gap-2 overflow-x-auto pb-1">
-          {images.map((src, i) => (
+          {media.map((item, i) => (
             <button
               key={i}
               onClick={() => setSelected(i)}
@@ -58,12 +94,20 @@ function Gallery({ images, title }: { images: string[]; title: string }) {
                   : "border-transparent opacity-60 hover:opacity-100"
               }`}
             >
-              <Image
-                src={src}
-                alt={`${title} ${i + 1}`}
-                fill
-                className="object-cover"
-              />
+              {item.type === "video" ? (
+                <div className="w-full h-full bg-black/80 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              ) : (
+                <Image
+                  src={item.src}
+                  alt={`${title} ${i + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </button>
           ))}
         </div>
@@ -72,12 +116,20 @@ function Gallery({ images, title }: { images: string[]; title: string }) {
   );
 }
 
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString("sl-SI", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export default function NoviceModal({
   novice,
-  children,
+  variant = "grid",
 }: {
   novice: NovicaData[];
-  children: (openModal: (slug: string) => void) => React.ReactNode;
+  variant?: "grid" | "list";
 }) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
@@ -98,21 +150,105 @@ export default function NoviceModal({
 
   const active = novice.find((n) => n.slug === activeSlug);
 
-  const { textHtml, allImages } = useMemo(() => {
-    if (!active) return { textHtml: "", allImages: [] };
-    const { textHtml, imageUrls } = extractImages(active.contentHtml || "");
-    const allImages: string[] = [];
-    if (active.image) allImages.push(active.image);
-    imageUrls.forEach((url) => {
-      if (!allImages.includes(url)) allImages.push(url);
+  const { textHtml, allMedia } = useMemo(() => {
+    if (!active) return { textHtml: "", allMedia: [] };
+    const { textHtml, media } = extractMedia(active.contentHtml || "");
+    const allMedia: MediaItem[] = [];
+    if (active.image) allMedia.push({ type: "image", src: active.image });
+    media.forEach((item) => {
+      if (!allMedia.some((m) => m.src === item.src)) allMedia.push(item);
     });
-    return { textHtml, allImages };
+    return { textHtml, allMedia };
   }, [active]);
 
   return (
     <>
-      {children((slug) => setActiveSlug(slug))}
+      {/* Cards */}
+      {variant === "grid" ? (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {novice.map((novica) => (
+            <button
+              key={novica.slug}
+              onClick={() => setActiveSlug(novica.slug)}
+              className="block group text-left"
+            >
+              <article className="bg-bg-card border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300 h-full">
+                {novica.image && (
+                  <div className="relative h-48">
+                    <Image
+                      src={novica.image}
+                      alt={novica.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
+                  <time className="text-accent text-sm font-medium">
+                    {formatDate(novica.date)}
+                  </time>
+                  <h3 className="text-lg font-bold mt-2 mb-3 group-hover:text-accent transition-colors">
+                    {novica.title}
+                  </h3>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    {novica.excerpt}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-accent text-sm font-medium mt-4">
+                    Preberi več
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </article>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="space-y-8">
+          {novice.map((novica) => (
+            <button
+              key={novica.slug}
+              onClick={() => setActiveSlug(novica.slug)}
+              className="block group text-left w-full"
+            >
+              <article className="bg-bg-card border border-border rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-300">
+                <div className="flex flex-col sm:flex-row">
+                  {novica.image && (
+                    <div className="relative w-full sm:w-64 h-48 sm:h-auto shrink-0">
+                      <Image
+                        src={novica.image}
+                        alt={novica.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <time className="text-accent text-sm font-medium">
+                      {formatDate(novica.date)}
+                    </time>
+                    <h2 className="text-xl font-bold mt-2 mb-3 group-hover:text-accent transition-colors">
+                      {novica.title}
+                    </h2>
+                    <p className="text-text-secondary text-sm leading-relaxed">
+                      {novica.excerpt}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-accent text-sm font-medium mt-4">
+                      Preberi več
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </button>
+          ))}
+        </div>
+      )}
 
+      {/* Modal */}
       {active && (
         <div
           className="fixed inset-0 z-50 bg-bg-primary/95 backdrop-blur-md flex items-center justify-center p-4"
@@ -135,17 +271,13 @@ export default function NoviceModal({
 
             {/* Date */}
             <time className="text-accent text-sm font-medium">
-              {new Date(active.date).toLocaleDateString("sl-SI", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
+              {formatDate(active.date)}
             </time>
 
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-6">{active.title}</h2>
 
-            {/* Text content (without images) */}
+            {/* Text content (without images/videos) */}
             {textHtml && (
               <div
                 className="prose-custom mb-8"
@@ -153,8 +285,8 @@ export default function NoviceModal({
               />
             )}
 
-            {/* Image gallery */}
-            <Gallery images={allImages} title={active.title} />
+            {/* Media gallery */}
+            <Gallery media={allMedia} title={active.title} />
           </div>
         </div>
       )}
