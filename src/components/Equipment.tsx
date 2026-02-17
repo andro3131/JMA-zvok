@@ -49,17 +49,17 @@ export default function Equipment() {
         <ScrollReveal delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Main PA */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
-            <div className="relative h-64">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift relative">
+            <div className="relative h-80">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356290/Image_202602172024_1_ssu9m2.jpg"
                 alt="JMAzvok zvočni sistem"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/60 via-40% to-transparent" />
             </div>
-            <div className="p-6">
+            <div className="relative -mt-24 p-6 pt-0">
               <h3 className="text-lg font-bold mb-2">Zvočni sistem</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Kakovosten zvočni sistem z aktivnimi zvočniki Yamaha in dB
@@ -70,17 +70,17 @@ export default function Equipment() {
           </div>
 
           {/* Mixing */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
-            <div className="relative h-64">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift relative">
+            <div className="relative h-80">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356286/Image_202602172024_dmhzff.jpg"
                 alt="JMAzvok mešalna miza"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/60 via-40% to-transparent" />
             </div>
-            <div className="p-6">
+            <div className="relative -mt-24 p-6 pt-0">
               <h3 className="text-lg font-bold mb-2">Digitalna mešalna miza</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Digitalni mešalni pulti Behringer z brezžičnim upravljanjem,
@@ -91,17 +91,17 @@ export default function Equipment() {
           </div>
 
           {/* Microphones */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
-            <div className="relative h-64">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift relative">
+            <div className="relative h-80">
               <Image
-                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357167/14-14_dfc8bq_xui4vh.jpg"
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
                 alt="JMAzvok mikrofoni"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/60 via-40% to-transparent" />
             </div>
-            <div className="p-6">
+            <div className="relative -mt-24 p-6 pt-0">
               <h3 className="text-lg font-bold mb-2">Mikrofoni</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Širok nabor profesionalnih mikrofonov za vsako situacijo — od
@@ -112,17 +112,17 @@ export default function Equipment() {
           </div>
 
           {/* Video */}
-          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
-            <div className="relative h-64">
+          <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift relative">
+            <div className="relative h-80">
               <Image
                 src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357111/Image_202602172038_sjlwyx.jpg"
                 alt="JMAzvok video oprema"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/60 via-40% to-transparent" />
             </div>
-            <div className="p-6">
+            <div className="relative -mt-24 p-6 pt-0">
               <h3 className="text-lg font-bold mb-2">Video oprema</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Profesionalna 4K kamera za snemanje prireditev in dogodkov.
