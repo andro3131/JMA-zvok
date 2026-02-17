@@ -92,7 +92,7 @@ export default function Equipment() {
               src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
               alt="JMAzvok mikrofoni"
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              className="object-cover scale-110 group-hover:scale-[1.15] transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
