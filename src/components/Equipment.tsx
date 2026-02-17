@@ -86,21 +86,21 @@ export default function Equipment() {
             </div>
           </div>
 
-          {/* Microphones & equipment */}
+          {/* Microphones */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
               src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
-              alt="JMAzvok mikrofoni in oprema"
+              alt="JMAzvok mikrofoni"
               fill
               className="object-cover scale-110 group-hover:scale-[1.15] transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white mb-1">Mikrofoni &amp; oprema</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Mikrofoni</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                Mikrofoni Shure, AKG, Sennheiser, Electro‑Voice in ostali.
-                MacBook Pro 16 M4 in iPad Pro 11 M4 za brezžično upravljanje
-                in snemanje.
+                Širok nabor profesionalnih mikrofonov za vsako situacijo — od
+                brezžičnih ročnih in naglavnih do studijskih kondenzatorskih
+                mikrofonov. Iz lastnega snemalnega studia.
               </p>
             </div>
           </div>
@@ -331,22 +331,26 @@ export default function Equipment() {
                 </ul>
               </div>
 
-              {/* Mikrofoni */}
+              {/* Mikrofoni & oprema */}
               <div>
                 <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
                   </svg>
-                  Mikrofoni
+                  Mikrofoni &amp; oprema
                 </h3>
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>Brezžični ročni in naglavni mikrofoni (Sennheiser)</span>
+                    <span>Mikrofoni Shure, AKG, Sennheiser, Electro‑Voice in ostali</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>Kondenzatorski in dinamični studijski mikrofoni</span>
+                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M4</strong> — za brezžično upravljanje in snemanje</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Apple iPad Pro 11 M4</strong> — za brezžično upravljanje mešalne mize</span>
                   </li>
                 </ul>
               </div>
