@@ -52,7 +52,7 @@ export default function Equipment() {
           <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
-                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355799/Screenshot_2026-02-17_at_20.16.11_dxzblw.png"
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356290/Image_202602172024_1_ssu9m2.jpg"
                 alt="JMAzvok zvočni sistem"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -73,7 +73,7 @@ export default function Equipment() {
           <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
-                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273279/20251021_185731_aiq6hk.jpg"
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356286/Image_202602172024_dmhzff.jpg"
                 alt="JMAzvok mešalna miza"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
