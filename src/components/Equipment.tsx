@@ -134,29 +134,11 @@ export default function Equipment() {
         </div>
         </ScrollReveal>
 
-        {/* Brands */}
-        <ScrollReveal delay={200}>
-        <div className="mt-16 text-center">
-          <p className="text-text-muted text-sm mb-6">
-            Zaupamo opremi vodilnih svetovnih proizvajalcev
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 text-text-muted">
-            {["Yamaha", "dB Technologies", "Behringer", "Sennheiser"].map(
-              (brand) => (
-                <span
-                  key={brand}
-                  className="text-lg font-semibold tracking-wide opacity-40 hover:opacity-70 transition-opacity"
-                >
-                  {brand}
-                </span>
-              )
-            )}
-          </div>
-
-          {/* CTA */}
+        {/* CTA */}
+        <div className="mt-10 text-center">
           <button
             onClick={() => setShowModal(true)}
-            className="mt-8 inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-bg-primary font-semibold px-8 py-3 rounded-lg transition-all duration-200 hover:scale-105"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-bg-primary font-semibold px-8 py-3 rounded-lg transition-all duration-200 hover:scale-105"
           >
             Vsa oprema
             <svg
@@ -174,7 +156,31 @@ export default function Equipment() {
             </svg>
           </button>
         </div>
-        </ScrollReveal>
+
+        {/* Scrolling brands ticker */}
+        <div className="mt-16">
+          <p className="text-text-muted text-sm text-center mb-4">
+            Zaupamo opremi vodilnih svetovnih proizvajalcev
+          </p>
+          <div className="relative overflow-hidden py-4 border-t border-b border-border/50">
+            <div className="brands-ticker flex whitespace-nowrap">
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex shrink-0 items-center">
+                  {["Yamaha", "dB Technologies", "Behringer", "Sennheiser"].map(
+                    (brand) => (
+                      <span
+                        key={`${brand}-${i}`}
+                        className="mx-12 text-lg font-semibold tracking-wide text-text-muted/50"
+                      >
+                        {brand}
+                      </span>
+                    )
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Equipment modal */}
