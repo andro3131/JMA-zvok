@@ -286,7 +286,7 @@ export default function Equipment() {
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Behringer X32</strong> — 32-kanalni digitalni mikser</span>
+                    <span><strong className="text-text-primary">Behringer X32 Compact</strong> — 32-kanalni digitalni mikser</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
