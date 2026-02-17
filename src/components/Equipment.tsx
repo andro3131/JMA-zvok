@@ -250,7 +250,19 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies</strong> — aktivni zvočniki</span>
+                    <span><strong className="text-text-primary">dB Technologies DVA S30N</strong> — nizkotonec (sub)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">dB Technologies DVA S10 DP</strong> — 2× nizkotonec (sub)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">dB Technologies DVX D15 HP</strong> — 2× full-range zvočnik</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">dB Technologies DVX D12 HP</strong> — 2× full-range zvočnik</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
