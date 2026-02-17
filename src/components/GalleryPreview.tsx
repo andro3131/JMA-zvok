@@ -10,7 +10,7 @@ const previewImages = [
     alt: "Prireditev - februar 2026",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324940/IMG_9162_kti2og.jpg",
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324951/IMG_9170_lp1kk8.jpg",
     alt: "Prireditev",
   },
   {
@@ -26,7 +26,7 @@ const previewImages = [
     alt: "Prireditev - maj 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275064/20250529_182203_qby9ct.jpg",
+    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275026/20250531_185810_fzqhj8.jpg",
     alt: "Prireditev - maj 2025",
   },
 ];
