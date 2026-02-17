@@ -56,7 +56,7 @@ const services = [
       </svg>
     ),
     link: "https://www.studio-mars.com",
-    linkLabel: "Druge studijske storitve — Studio MARS",
+    linkLabel: "Ostale studijske storitve — Studio MARS",
   },
   {
     title: "Video snemanje prireditev",
