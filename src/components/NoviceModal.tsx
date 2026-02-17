@@ -21,7 +21,11 @@ function extractMedia(html: string): { textHtml: string; media: MediaItem[] } {
   const media: MediaItem[] = [];
   let textHtml = html;
 
-  // Extract videos
+  // Extract videos (including when wrapped in <p>)
+  textHtml = textHtml.replace(/<p>\s*<video[^>]*src="([^"]*)"[^>]*>[\s\S]*?<\/video>\s*<\/p>/g, (_, src) => {
+    media.push({ type: "video", src });
+    return "";
+  });
   textHtml = textHtml.replace(/<video[^>]*src="([^"]*)"[^>]*>[\s\S]*?<\/video>/g, (_, src) => {
     media.push({ type: "video", src });
     return "";
@@ -41,6 +45,9 @@ function extractMedia(html: string): { textHtml: string; media: MediaItem[] } {
     media.push({ type: "image", src });
     return "";
   });
+
+  // Clean up empty paragraphs
+  textHtml = textHtml.replace(/<p>\s*<\/p>/g, "");
 
   return { textHtml, media };
 }
@@ -67,15 +74,14 @@ function Gallery({ media, title }: { media: MediaItem[]; title: string }) {
             controls
             playsInline
             className="w-full rounded-2xl"
-            style={{ maxHeight: "24rem" }}
           />
         ) : (
-          <div className="relative w-full h-64 sm:h-96">
+          <div className="relative w-full" style={{ minHeight: "20rem" }}>
             <Image
               src={current.src}
               alt={`${title} ${selected + 1}`}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         )}
@@ -251,11 +257,11 @@ export default function NoviceModal({
       {/* Modal */}
       {active && (
         <div
-          className="fixed inset-0 z-50 bg-bg-primary/95 backdrop-blur-md flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-bg-primary/95 backdrop-blur-md overflow-y-auto p-4"
           onClick={close}
         >
           <div
-            className="relative bg-bg-card border border-border rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto p-8 sm:p-10"
+            className="relative bg-bg-card border border-border rounded-2xl max-w-3xl w-full mx-auto my-8 p-8 sm:p-10"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
