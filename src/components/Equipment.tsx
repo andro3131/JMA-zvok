@@ -270,7 +270,7 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">the box PA 302 A</strong> — 2× aktivni monitorji (odrski monitoring)</span>
+                    <span><strong className="text-text-primary">the box PA 302 A</strong> — 2× aktivni monitorji</span>
                   </li>
                 </ul>
               </div>
