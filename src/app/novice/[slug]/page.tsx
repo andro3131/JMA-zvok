@@ -71,6 +71,12 @@ export default async function NovicaPage({ params }: Props) {
           <h1 className="text-3xl sm:text-4xl font-bold mt-3">{novica.title}</h1>
         </header>
 
+        {/* Content */}
+        <div
+          className="prose-custom mb-10"
+          dangerouslySetInnerHTML={{ __html: novica.contentHtml || "" }}
+        />
+
         {/* Featured image */}
         {novica.image && (
           <div className="relative w-full h-64 sm:h-96 rounded-2xl overflow-hidden mb-10">
@@ -83,12 +89,6 @@ export default async function NovicaPage({ params }: Props) {
             />
           </div>
         )}
-
-        {/* Content */}
-        <div
-          className="prose-custom"
-          dangerouslySetInnerHTML={{ __html: novica.contentHtml || "" }}
-        />
 
         {/* CTA */}
         <div className="mt-16 p-8 bg-bg-card border border-border rounded-2xl text-center">
