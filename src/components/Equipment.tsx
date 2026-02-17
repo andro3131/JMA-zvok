@@ -246,7 +246,7 @@ export default function Equipment() {
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Yamaha DSR112</strong> — aktivni zvočniki (glavna ozvočitev)</span>
+                    <span><strong className="text-text-primary">Yamaha DSR112</strong> — aktivni zvočniki</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
@@ -258,11 +258,11 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVX D15 HP</strong> — 2× full-range zvočnik</span>
+                    <span><strong className="text-text-primary">dB Technologies DVX D15 HP</strong> — 2× aktivni zvočnik</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVX D12 HP</strong> — 2× full-range zvočnik</span>
+                    <span><strong className="text-text-primary">dB Technologies DVX D12 HP</strong> — 2× aktivni zvočnik</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
@@ -270,7 +270,7 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">the box PA 302 A</strong> — aktivni monitorji (odrski monitoring)</span>
+                    <span><strong className="text-text-primary">the box PA 302 A</strong> — 2× aktivni monitorji (odrski monitoring)</span>
                   </li>
                 </ul>
               </div>
