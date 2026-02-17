@@ -157,28 +157,29 @@ export default function Equipment() {
           </button>
         </div>
 
-        {/* Scrolling brands ticker */}
-        <div className="mt-16">
-          <p className="text-text-muted text-sm text-center mb-4">
-            Zaupamo opremi vodilnih svetovnih proizvajalcev
-          </p>
-          <div className="relative overflow-hidden py-4 border-t border-b border-border/50">
-            <div className="brands-ticker flex whitespace-nowrap">
-              {[...Array(2)].map((_, i) => (
-                <div key={i} className="flex shrink-0 items-center">
-                  {["Yamaha", "dB Technologies", "Behringer", "Sennheiser", "Shure", "LD Systems", "The Box"].map(
-                    (brand) => (
-                      <span
-                        key={`${brand}-${i}`}
-                        className="mx-12 text-lg font-semibold tracking-wide text-text-muted/50"
-                      >
-                        {brand}
-                      </span>
-                    )
-                  )}
-                </div>
-              ))}
-            </div>
+      </div>
+
+      {/* Scrolling brands ticker — full width, bottom edge */}
+      <div className="mt-16 bg-black">
+        <p className="text-text-muted text-xs text-center pt-4 pb-2 uppercase tracking-widest">
+          Zaupamo opremi vodilnih svetovnih proizvajalcev
+        </p>
+        <div className="relative overflow-hidden py-4">
+          <div className="brands-ticker flex whitespace-nowrap">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex shrink-0 items-center">
+                {["Yamaha", "dB Technologies", "Behringer", "Sennheiser", "Shure", "LD Systems", "The Box"].map(
+                  (brand) => (
+                    <span
+                      key={`${brand}-${i}`}
+                      className="mx-12 text-lg font-semibold tracking-wide text-text-muted/60"
+                    >
+                      {brand}
+                    </span>
+                  )
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
