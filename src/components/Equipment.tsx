@@ -239,6 +239,14 @@ export default function Equipment() {
                   className="object-cover"
                 />
               </div>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357647/Image_202602172047_ajx0il.jpg"
+                  alt="Oprema 8"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             {/* Equipment lists */}
