@@ -25,7 +25,7 @@ export default function Equipment() {
   }, [handleKeyDown, showModal]);
 
   return (
-    <section id="oprema" className="py-24 bg-bg-secondary">
+    <section id="oprema" className="pt-24 pb-0 bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <ScrollReveal>
@@ -161,9 +161,6 @@ export default function Equipment() {
 
       {/* Scrolling brands ticker — full width, bottom edge */}
       <div className="mt-16 bg-black">
-        <p className="text-text-muted text-xs text-center pt-4 pb-2 uppercase tracking-widest">
-          Zaupamo opremi vodilnih svetovnih proizvajalcev
-        </p>
         <div className="relative overflow-hidden py-4">
           <div className="brands-ticker flex whitespace-nowrap">
             {[...Array(2)].map((_, i) => (
