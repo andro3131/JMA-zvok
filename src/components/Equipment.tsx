@@ -94,7 +94,7 @@ export default function Equipment() {
           <div className="bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <div className="relative h-64">
               <Image
-                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg"
+                src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357167/14-14_dfc8bq_xui4vh.jpg"
                 alt="JMAzvok mikrofoni"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
