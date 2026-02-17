@@ -76,12 +76,12 @@ function Gallery({ media, title }: { media: MediaItem[]; title: string }) {
             className="w-full rounded-2xl"
           />
         ) : (
-          <div className="relative w-full" style={{ minHeight: "20rem" }}>
+          <div className="relative w-full h-80 sm:h-[30rem]">
             <Image
               src={current.src}
               alt={`${title} ${selected + 1}`}
               fill
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         )}
