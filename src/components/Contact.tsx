@@ -70,10 +70,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">E-pošta</h3>
                   <a
-                    href="mailto:info@jma-zvok.si"
+                    href="mailto:jmazvok@gmail.com"
                     className="text-text-secondary hover:text-accent transition-colors"
                   >
-                    info@jma-zvok.si
+                    jmazvok@gmail.com
                   </a>
                 </div>
               </div>
@@ -98,10 +98,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Telefon</h3>
                   <a
-                    href="tel:+386XXXXXXXX"
+                    href="tel:+38641758572"
                     className="text-text-secondary hover:text-accent transition-colors"
                   >
-                    +386 XX XXX XXX
+                    041 758 572
                   </a>
                 </div>
               </div>
