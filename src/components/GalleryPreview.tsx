@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,8 +34,29 @@ const previewImages = [
 export default function GalleryPreview() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (selectedImage === null) return;
+      if (e.key === "Escape") setSelectedImage(null);
+      if (e.key === "ArrowLeft")
+        setSelectedImage(
+          selectedImage === 0 ? previewImages.length - 1 : selectedImage - 1
+        );
+      if (e.key === "ArrowRight")
+        setSelectedImage(
+          selectedImage === previewImages.length - 1 ? 0 : selectedImage + 1
+        );
+    },
+    [selectedImage]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
+
   return (
-    <section className="py-24 bg-bg-primary">
+    <section id="galerija" className="py-24 bg-bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">

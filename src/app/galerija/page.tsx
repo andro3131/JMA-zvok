@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -74,13 +74,34 @@ const images = [
 export default function GalerijaPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (selectedImage === null) return;
+      if (e.key === "Escape") setSelectedImage(null);
+      if (e.key === "ArrowLeft")
+        setSelectedImage(
+          selectedImage === 0 ? images.length - 1 : selectedImage - 1
+        );
+      if (e.key === "ArrowRight")
+        setSelectedImage(
+          selectedImage === images.length - 1 ? 0 : selectedImage + 1
+        );
+    },
+    [selectedImage]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
+
   return (
     <div className="min-h-screen bg-bg-primary pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <Link
-            href="/"
+            href="/#galerija"
             className="inline-flex items-center gap-2 text-text-muted hover:text-accent transition-colors text-sm mb-6"
           >
             <svg

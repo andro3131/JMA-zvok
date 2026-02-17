@@ -16,7 +16,7 @@ export default function NovicePage() {
         {/* Header */}
         <div className="text-center mb-12">
           <Link
-            href="/"
+            href="/#novice"
             className="inline-flex items-center gap-2 text-text-muted hover:text-accent transition-colors text-sm mb-6"
           >
             <svg
