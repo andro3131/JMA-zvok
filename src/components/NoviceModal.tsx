@@ -102,10 +102,12 @@ function Gallery({ media, title }: { media: MediaItem[]; title: string }) {
             >
               {item.type === "video" ? (
                 <div className="relative w-full h-full">
+                  {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                   <video
-                    src={item.src}
+                    src={`${item.src}#t=0.1`}
                     muted
-                    preload="metadata"
+                    playsInline
+                    preload="auto"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">

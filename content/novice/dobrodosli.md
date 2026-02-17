@@ -1,24 +1,24 @@
 ---
-title: "Dobrodošli na JMAzvok"
+title: "Dobrodošli na JMA Zvok"
 date: "2026-02-16"
-excerpt: "Z veseljem predstavljamo našo novo spletno stran in storitve profesionalnega ozvočenja ter video snemanja."
+excerpt: "Predstavljamo vam JMA Zvok — družinski duo za profesionalno ozvočenje in video snemanje."
 image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273162/20260213_215234_nzfknc.jpg"
 ---
 
-Z veseljem vam predstavljamo **JMAzvok** — družinski duo, ki se ukvarja s profesionalnim ozvočenjem prireditev in video snemanjem.
+Predstavljamo vam **JMA Zvok** — družinski duo za profesionalno ozvočenje prireditev in video snemanje.
 
 ## Kdo smo?
 
-Sva Jaka in Andrej Mežan — oče in sin z dolgoletnimi izkušnjami v svetu zvoka. Skupaj ozvočujeva raznorazne prireditve po Dolenjski in širše po Sloveniji.
+Sva **Jaka in Andrej Mežan** — oče in sin, ki skupaj ozvočujeva prireditve po Dolenjski in širše po Sloveniji.
 
 ## Kaj ponujamo?
 
-- **Profesionalno ozvočenje** za poroke, praznovanja, občinske prireditve, šolske slovesnosti in manjše koncerte
-- **Video snemanje v 4K kvaliteti** z možnostjo profesionalne obdelave in kombinacije s posnetim zvokom
-- **Studijsko snemanje** v našem snemalnem studiu [Studio MARS](https://www.studio-mars.com)
+- **Profesionalno ozvočenje** porok, praznovanj, občinskih prireditev, šolskih slovesnosti in koncertov
+- **Video snemanje v 4K** s profesionalno obdelavo in kombinacijo s posnetim zvokom
+- **Studijsko snemanje** v studiu [Studio MARS](https://www.studio-mars.com)
 
-## Zakaj JMAzvok?
+## Zakaj JMA Zvok?
 
-Ker verjamemo, da vsak dogodek zasluži najboljši zvok. Naš osebni pristop zagotavlja, da se posvetimo vsakemu detajlu — od postavitve opreme do zadnjega takta glasbe.
+Vsak dogodek zasluži najboljši zvok. Posvetimo se vsakemu detajlu — od postavitve opreme do zadnjega takta glasbe.
 
-Vabljeni, da nas kontaktirate za brezplačno ponudbo!
+Kontaktirajte nas za brezplačno ponudbo!
