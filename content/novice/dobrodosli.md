@@ -9,7 +9,7 @@ Predstavljamo vam **JMA Zvok** — družinski duo za profesionalno ozvočenje pr
 
 ## Kdo smo?
 
-Sva **Jaka in Andrej Mežan** — oče in sin, ki skupaj ozvočujeva prireditve po Dolenjski in širše po Sloveniji.
+Sva **Andrej in Jaka Mežan** — oče in sin, ki skupaj ozvočujeva prireditve po Dolenjski in širše po Sloveniji.
 
 ## Kaj ponujamo?
 
