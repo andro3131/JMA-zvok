@@ -13,7 +13,7 @@ export default function AnimatedCounter({
   end,
   suffix = "",
   duration = 2000,
-  repeatInterval = 8000,
+  repeatInterval = 10000,
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -25,9 +25,13 @@ export default function AnimatedCounter({
     function step(currentTime: number) {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease-out cubic
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * end));
+      // Smooth ease-in-out quartic for fluid finish
+      const eased =
+        progress < 0.5
+          ? 8 * progress * progress * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 4) / 2;
+      const value = Math.round(eased * end);
+      setCount(value);
 
       if (progress < 1) {
         requestAnimationFrame(step);

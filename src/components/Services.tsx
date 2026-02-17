@@ -139,10 +139,10 @@ export default function Services() {
         {/* Services grid */}
         <ScrollReveal delay={100}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <div
                 key={service.title}
-                className="service-card bg-bg-card border border-border rounded-2xl p-8 hover:border-accent/30 card-hover-lift group"
+                className={`service-card bg-bg-card border border-border rounded-2xl p-8 hover:border-accent/30 card-hover-lift group animate-float-${index + 1}`}
               >
               <div className="text-accent mb-5 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
