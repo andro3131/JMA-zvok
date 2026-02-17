@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 animate-fade-in-up animate-delay-100">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 animate-fade-in-up animate-delay-100 animate-gentle-bob">
           Vaš dogodek.
           <br />
           <span className="text-accent">Naš zvok.</span>

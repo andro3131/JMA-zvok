@@ -104,6 +104,12 @@ body {
 .animate-float-3 { animation: float-3 4.5s ease-in-out infinite; }
 .animate-float-4 { animation: float-4 5.5s ease-in-out infinite; }
 
+@keyframes gentle-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+.animate-gentle-bob { animation: gentle-bob 3s ease-in-out infinite; }
+
 /* Scroll reveal */
 .scroll-reveal {
   opacity: 0;
