@@ -58,7 +58,12 @@ export default function Equipment() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white">Zvočni sistem</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Zvočni sistem</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Kakovosten zvočni sistem z aktivnimi zvočniki Yamaha in dB
+                Technologies, prilagojen za jasno reprodukcijo tako govora kot
+                glasbe. Primerno za dogodke od 50 do 500 oseb.
+              </p>
             </div>
           </div>
 
@@ -72,7 +77,12 @@ export default function Equipment() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white">Digitalna mešalna miza</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Digitalna mešalna miza</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Digitalni mešalni pulti Behringer z brezžičnim upravljanjem,
+                večkanalnim snemanjem in profesionalnimi zvočnimi efekti. Popoln
+                nadzor nad zvokom v realnem času.
+              </p>
             </div>
           </div>
 
@@ -86,7 +96,12 @@ export default function Equipment() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white">Mikrofoni</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Mikrofoni</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Širok nabor profesionalnih mikrofonov za vsako situacijo — od
+                brezžičnih ročnih in naglavnih do studijskih kondenzatorskih
+                mikrofonov. Iz lastnega snemalnega studia.
+              </p>
             </div>
           </div>
 
@@ -100,7 +115,12 @@ export default function Equipment() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-lg font-bold text-white">Video oprema</h3>
+              <h3 className="text-lg font-bold text-white mb-1">Video oprema</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Profesionalna 4K kamera za snemanje prireditev in dogodkov.
+                Kombinacija s profesionalno posnetim zvokom za vrhunski končni
+                izdelek.
+              </p>
             </div>
           </div>
         </div>
