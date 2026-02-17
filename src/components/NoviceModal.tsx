@@ -170,7 +170,8 @@ export default function NoviceModal({
     if (!active) return { textHtml: "", allMedia: [] };
     const { textHtml, media } = extractMedia(active.contentHtml || "");
     const allMedia: MediaItem[] = [];
-    if (active.image) allMedia.push({ type: "image", src: active.image });
+    const isVideoThumb = active.image?.includes("/video/upload/");
+    if (active.image && !isVideoThumb) allMedia.push({ type: "image", src: active.image });
     media.forEach((item) => {
       if (!allMedia.some((m) => m.src === item.src)) allMedia.push(item);
     });
