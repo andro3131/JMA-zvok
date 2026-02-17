@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import Image from "next/image";
 
 interface NovicaData {
@@ -10,6 +10,66 @@ interface NovicaData {
   excerpt: string;
   image?: string;
   contentHtml?: string;
+}
+
+function extractImages(html: string): { textHtml: string; imageUrls: string[] } {
+  const imageUrls: string[] = [];
+  const textHtml = html.replace(/<p>\s*<img[^>]*src="([^"]*)"[^>]*>\s*<\/p>/g, (_, src) => {
+    imageUrls.push(src);
+    return "";
+  }).replace(/<img[^>]*src="([^"]*)"[^>]*>/g, (_, src) => {
+    imageUrls.push(src);
+    return "";
+  });
+  return { textHtml, imageUrls };
+}
+
+function Gallery({ images, title }: { images: string[]; title: string }) {
+  const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    setSelected(0);
+  }, [images]);
+
+  if (images.length === 0) return null;
+
+  return (
+    <div>
+      {/* Large image */}
+      <div className="relative w-full h-64 sm:h-96 rounded-2xl overflow-hidden mb-3">
+        <Image
+          src={images[selected]}
+          alt={`${title} ${selected + 1}`}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Thumbnails */}
+      {images.length > 1 && (
+        <div className="flex gap-2 overflow-x-auto pb-1">
+          {images.map((src, i) => (
+            <button
+              key={i}
+              onClick={() => setSelected(i)}
+              className={`relative w-20 h-16 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
+                i === selected
+                  ? "border-accent"
+                  : "border-transparent opacity-60 hover:opacity-100"
+              }`}
+            >
+              <Image
+                src={src}
+                alt={`${title} ${i + 1}`}
+                fill
+                className="object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default function NoviceModal({
@@ -37,6 +97,17 @@ export default function NoviceModal({
   }, [activeSlug, close]);
 
   const active = novice.find((n) => n.slug === activeSlug);
+
+  const { textHtml, allImages } = useMemo(() => {
+    if (!active) return { textHtml: "", allImages: [] };
+    const { textHtml, imageUrls } = extractImages(active.contentHtml || "");
+    const allImages: string[] = [];
+    if (active.image) allImages.push(active.image);
+    imageUrls.forEach((url) => {
+      if (!allImages.includes(url)) allImages.push(url);
+    });
+    return { textHtml, allImages };
+  }, [active]);
 
   return (
     <>
@@ -74,25 +145,16 @@ export default function NoviceModal({
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-6">{active.title}</h2>
 
-            {/* Content */}
-            {active.contentHtml && (
+            {/* Text content (without images) */}
+            {textHtml && (
               <div
                 className="prose-custom mb-8"
-                dangerouslySetInnerHTML={{ __html: active.contentHtml }}
+                dangerouslySetInnerHTML={{ __html: textHtml }}
               />
             )}
 
-            {/* Featured image */}
-            {active.image && (
-              <div className="relative w-full h-64 sm:h-96 rounded-2xl overflow-hidden">
-                <Image
-                  src={active.image}
-                  alt={active.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            )}
+            {/* Image gallery */}
+            <Gallery images={allImages} title={active.title} />
           </div>
         </div>
       )}
