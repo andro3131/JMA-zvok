@@ -165,7 +165,7 @@ export default function Equipment() {
           <div className="brands-ticker flex whitespace-nowrap">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex shrink-0 items-center">
-                {["Yamaha", "dB Technologies", "Behringer", "Sennheiser", "Shure", "LD Systems", "The Box"].map(
+                {["Yamaha", "dB Technologies", "Behringer", "Sennheiser", "Shure", "LD Systems", "The Box", "Panasonic", "AKG"].map(
                   (brand) => (
                     <span
                       key={`${brand}-${i}`}
