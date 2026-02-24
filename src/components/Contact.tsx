@@ -1,7 +1,12 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 import ScrollReveal from "./ScrollReveal";
+
+const EMAILJS_SERVICE_ID = "service_vjtfifg";
+const EMAILJS_TEMPLATE_ID = "template_uqza1qb";
+const EMAILJS_PUBLIC_KEY = "pKo0IOklVAt5jXO3u";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -12,20 +17,21 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
 
-    // For now, just simulate sending — replace with actual endpoint later
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      eventType: formData.get("eventType"),
-      message: formData.get("message"),
-    };
 
     try {
-      // TODO: Replace with actual form submission (e.g., email API, Formspree, etc.)
-      console.log("Form data:", data);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.get("name"),
+          from_email: formData.get("email"),
+          phone: formData.get("phone") || "—",
+          event_type: formData.get("eventType") || "—",
+          message: formData.get("message"),
+        },
+        EMAILJS_PUBLIC_KEY
+      );
       setStatus("sent");
     } catch {
       setStatus("error");
