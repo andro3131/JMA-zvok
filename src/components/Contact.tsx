@@ -77,6 +77,13 @@ export default function Contact() {
                   >
                     jma.zvok@gmail.com
                   </a>
+                  <br />
+                  <a
+                    href="mailto:snemalni.studio.mars@gmail.com"
+                    className="text-text-secondary hover:text-accent transition-colors"
+                  >
+                    snemalni.studio.mars@gmail.com
+                  </a>
                 </div>
               </div>
 
