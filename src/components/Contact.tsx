@@ -78,17 +78,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">E-pošta</h3>
                   <a
-                    href="mailto:jma.zvok@gmail.com"
+                    href="mailto:info@jma-zvok.si"
                     className="text-text-secondary hover:text-accent transition-colors"
                   >
-                    jma.zvok@gmail.com
-                  </a>
-                  <br />
-                  <a
-                    href="mailto:snemalni.studio.mars@gmail.com"
-                    className="text-text-secondary hover:text-accent transition-colors"
-                  >
-                    snemalni.studio.mars@gmail.com
+                    info@jma-zvok.si
                   </a>
                 </div>
               </div>
