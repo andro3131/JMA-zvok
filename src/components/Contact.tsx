@@ -151,7 +151,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Lokacija</h3>
                   <p className="text-text-secondary">
-                    Dolenjska, Slovenija
+                    Trebnje, Slovenija
                     <br />
                     <span className="text-sm text-text-muted">
                       Pokrivamo celotno Slovenijo
