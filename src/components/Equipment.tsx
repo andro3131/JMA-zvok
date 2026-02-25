@@ -282,7 +282,11 @@ export default function Equipment() {
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Yamaha DSR112</strong> — aktivni zvočniki</span>
+                    <span><strong className="text-text-primary">Yamaha DZR12</strong> — 2× aktivni zvočnik</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Yamaha DSR112</strong> — 2× aktivni zvočnik</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
