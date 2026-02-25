@@ -51,7 +51,7 @@ export default function Equipment() {
           {/* Main PA */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356290/Image_202602172024_1_ssu9m2.jpg"
+              src="https://jma-zvok-cdn.b-cdn.net/Oprema/Image_202602172024_1_ssu9m2.jpg"
               alt="JMAzvok zvočni sistem"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -70,7 +70,7 @@ export default function Equipment() {
           {/* Mixing */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771356286/Image_202602172024_dmhzff.jpg"
+              src="https://jma-zvok-cdn.b-cdn.net/Oprema/Image_202602172024_dmhzff.jpg"
               alt="JMAzvok mešalna miza"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -89,7 +89,7 @@ export default function Equipment() {
           {/* Microphones */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357323/14-14_dfc8bq_zyndxs.jpg"
+              src="https://jma-zvok-cdn.b-cdn.net/Oprema/14-14_dfc8bq_zyndxs.jpg"
               alt="JMAzvok mikrofoni"
               fill
               className="object-cover scale-110 group-hover:scale-[1.15] transition-transform duration-500"
@@ -108,7 +108,7 @@ export default function Equipment() {
           {/* Video */}
           <div className="relative h-72 bg-bg-card border border-border rounded-2xl overflow-hidden group card-hover-lift">
             <Image
-              src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357111/Image_202602172038_sjlwyx.jpg"
+              src="https://jma-zvok-cdn.b-cdn.net/Oprema/Image_202602172038_sjlwyx.jpg"
               alt="JMAzvok video oprema"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -205,7 +205,7 @@ export default function Equipment() {
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mb-10">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355095/Screenshot_2026-02-17_at_20.01.22_yxjkev.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_20.01.22_yxjkev.png"
                   alt="Oprema 1"
                   fill
                   className="object-cover"
@@ -213,7 +213,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355094/Screenshot_2026-02-17_at_19.57.53_tmo7qn.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_19.57.53_tmo7qn.png"
                   alt="Oprema 2"
                   fill
                   className="object-cover"
@@ -221,7 +221,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355091/Screenshot_2026-02-17_at_19.58.23_a3v9f2.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_19.58.23_a3v9f2.png"
                   alt="Oprema 3"
                   fill
                   className="object-cover"
@@ -229,7 +229,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355089/Screenshot_2026-02-17_at_19.59.41_pjfauz.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_19.59.41_pjfauz.png"
                   alt="Oprema 4"
                   fill
                   className="object-cover"
@@ -237,7 +237,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355087/Screenshot_2026-02-17_at_20.02.11_r8oxhb.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_20.02.11_r8oxhb.png"
                   alt="Oprema 5"
                   fill
                   className="object-cover"
@@ -245,7 +245,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355082/Screenshot_2026-02-17_at_19.58.48_o3xtib.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_19.58.48_o3xtib.png"
                   alt="Oprema 6"
                   fill
                   className="object-cover"
@@ -253,7 +253,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771355081/Screenshot_2026-02-17_at_19.57.23_cr7ibm.png"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Screenshot_2026-02-17_at_19.57.23_cr7ibm.png"
                   alt="Oprema 7"
                   fill
                   className="object-cover"
@@ -261,7 +261,7 @@ export default function Equipment() {
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771357647/Image_202602172047_ajx0il.jpg"
+                  src="https://jma-zvok-cdn.b-cdn.net/Oprema/Image_202602172047_ajx0il.jpg"
                   alt="Oprema 8"
                   fill
                   className="object-cover"
