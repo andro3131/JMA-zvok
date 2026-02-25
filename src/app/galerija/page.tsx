@@ -6,67 +6,67 @@ import Link from "next/link";
 
 const images = [
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273162/20260213_215234_nzfknc.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20260213_215234_nzfknc.jpg",
     alt: "Prireditev - februar 2026",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273195/20260213_224225_erzbv5.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20260213_224225_erzbv5.jpg",
     alt: "Prireditev - februar 2026",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273247/20251125_185323_uo5ss0.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20251125_185323_uo5ss0.jpg",
     alt: "Prireditev - november 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273265/20251122_170703_k7moi9.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20251122_170703_k7moi9.jpg",
     alt: "Prireditev - november 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771273279/20251021_185731_aiq6hk.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20251021_185731_aiq6hk.jpg",
     alt: "Prireditev - oktober 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771274951/20250706_013859_jdnrgp.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250706_013859_jdnrgp.jpg",
     alt: "Prireditev - julij 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275003/20250531_203559_kwlenz.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_203559_kwlenz.jpg",
     alt: "Prireditev - maj 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275026/20250531_185810_fzqhj8.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_185810_fzqhj8.jpg",
     alt: "Prireditev - maj 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275064/20250529_182203_qby9ct.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250529_182203_qby9ct.jpg",
     alt: "Prireditev - maj 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771275120/20250523_182722_shspsj.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250523_182722_shspsj.jpg",
     alt: "Prireditev - maj 2025",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324940/IMG_9162_kti2og.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9162_kti2og.jpg",
     alt: "Prireditev",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324941/IMG_9165_mkebup.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9165_mkebup.jpg",
     alt: "Prireditev",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324942/IMG_9156_i7yogr.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9156_i7yogr.jpg",
     alt: "Prireditev",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324944/IMG_9155_czf75e.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9155_czf75e.jpg",
     alt: "Prireditev",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324951/IMG_9170_lp1kk8.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9170_lp1kk8.jpg",
     alt: "Prireditev",
   },
   {
-    src: "https://res.cloudinary.com/dewf3zos0/image/upload/v1771324949/IMG_9154_rmvomk.jpg",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9154_rmvomk.jpg",
     alt: "Prireditev",
   },
 ];

@@ -12,7 +12,7 @@ export default function About() {
             <div className="space-y-4">
               <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275064/20250529_182203_qby9ct.jpg"
+                  src="https://jma-zvok-cdn.b-cdn.net/Galerija/20250529_182203_qby9ct.jpg"
                   alt="JMAzvok oprema"
                   fill
                   className="object-cover"
@@ -20,7 +20,7 @@ export default function About() {
               </div>
               <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275026/20250531_185810_fzqhj8.jpg"
+                  src="https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_185810_fzqhj8.jpg"
                   alt="JMAzvok na prireditvi"
                   fill
                   className="object-cover"
@@ -30,7 +30,7 @@ export default function About() {
             <div className="space-y-4 pt-8">
               <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771273265/20251122_170703_k7moi9.jpg"
+                  src="https://jma-zvok-cdn.b-cdn.net/Galerija/20251122_170703_k7moi9.jpg"
                   alt="JMAzvok postavitev"
                   fill
                   className="object-cover"
@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dewf3zos0/image/upload/v1771275003/20250531_203559_kwlenz.jpg"
+                  src="https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_203559_kwlenz.jpg"
                   alt="JMAzvok prireditev"
                   fill
                   className="object-cover"
