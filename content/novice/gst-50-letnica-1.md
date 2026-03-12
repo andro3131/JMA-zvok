@@ -13,4 +13,10 @@ Poskrbeli smo za ozvočenje, **večkanalno audio snemanje** in **video snemanje*
 
 ![Glasbena šola Trebnje](https://jma-zvok-cdn.b-cdn.net/Novice/20260310_185636.jpg)
 
+![Glasbena šola Trebnje](https://jma-zvok-cdn.b-cdn.net/Novice/649186354_122149301420816693_2072278627073510003_n.jpg)
+
+![Glasbena šola Trebnje](https://jma-zvok-cdn.b-cdn.net/Novice/649211464_122149301594816693_3893294501126638401_n.jpg)
+
+![Glasbena šola Trebnje](https://jma-zvok-cdn.b-cdn.net/Novice/650765182_122149301384816693_5536019053614602240_n.jpg)
+
 Naslednji koncert v seriji bo **23. marca v KD Trebnje** — vidimo se tam! 🔥
