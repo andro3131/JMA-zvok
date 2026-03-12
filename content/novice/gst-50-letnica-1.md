@@ -5,7 +5,7 @@ excerpt: "Ozvočevanje, večkanalno audio snemanje in video snemanje prvega od p
 image: "https://jma-zvok-cdn.b-cdn.net/Novice/20260310_183942.jpg"
 ---
 
-Čast nam je biti del praznovanja **50. letnice Glasbene šole Trebnje**! 🎶
+V ponos nam je biti del praznovanja **50. letnice Glasbene šole Trebnje**! 🎶
 
 Poskrbeli smo za ozvočenje, **večkanalno audio snemanje** in **video snemanje** prvega od petih jubilejnih koncertov. V dvorani **Stik Trebnje** so navdušili učenci **kitarskega** in **harmonikarskega oddelka**.
 
