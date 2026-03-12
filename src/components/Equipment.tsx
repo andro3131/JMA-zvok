@@ -346,7 +346,7 @@ export default function Equipment() {
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>Mikrofoni Shure, AKG, Sennheiser, Electro‑Voice in ostali</span>
+                    <span>Mikrofoni Shure (Beta58, Sm57, Sm58, Sm81, Beta52, Beta57 itd), Rode (M2, NT5 itd), Electro‑Voice (RE20 itd), Beyerdynamic (MCE 83 itd), Audix DPS drum set in ostali</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
