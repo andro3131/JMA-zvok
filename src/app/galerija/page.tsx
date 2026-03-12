@@ -6,6 +6,10 @@ import Link from "next/link";
 
 const images = [
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260310_183942.jpg",
+    alt: "Glasbena šola Trebnje - marec 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20260213_215234_nzfknc.jpg",
     alt: "Prireditev - februar 2026",
   },
