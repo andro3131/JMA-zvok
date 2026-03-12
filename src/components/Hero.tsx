@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="grid grid-cols-3 gap-8 mt-20 animate-fade-in-up animate-delay-400">
           <div>
             <div className="text-2xl sm:text-3xl font-bold text-accent">
-              <AnimatedCounter end={50} suffix="+" />
+              <AnimatedCounter end={100} suffix="+" />
             </div>
             <div className="text-xs sm:text-sm text-text-muted mt-1">
               Izvedenih dogodkov
