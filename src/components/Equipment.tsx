@@ -350,11 +350,19 @@ export default function Equipment() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M4</strong> — za brezžično upravljanje in snemanje</span>
+                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M1</strong> — za brezžično upravljanje mešalnih miz</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M4</strong> — za večkanalno snemanje</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
                     <span><strong className="text-text-primary">Apple iPad Pro 11 M4</strong> — za brezžično upravljanje mešalne mize</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Apple iPad 4</strong> — za brezžično upravljanje mešalne mize</span>
                   </li>
                 </ul>
               </div>
