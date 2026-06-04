@@ -78,6 +78,22 @@ const images = [
     alt: "Dogodka v Trebnjem in Šentrupertu - april 2026",
   },
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/686504453_122110980039283319_7888424123641099687_n.jpg",
+    alt: "4. oddelčni nastop petja - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/685750324_122110980741283319_8788807810691551544_n.jpg",
+    alt: "4. oddelčni nastop petja - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/686754304_122110980003283319_5904225053606729220_n.jpg",
+    alt: "4. oddelčni nastop petja - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/689166052_122110980159283319_5578582555807138458_n.jpg",
+    alt: "4. oddelčni nastop petja - april 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260310_183942.jpg",
     alt: "Glasbena šola Trebnje - marec 2026",
   },
