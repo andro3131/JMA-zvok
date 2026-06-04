@@ -6,6 +6,78 @@ import Link from "next/link";
 
 const images = [
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_210151.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_203308.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_201202.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_185909.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_184513.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714444450_122191529606784629_984381086034513122_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/713763820_122191529552784629_346787667250995082_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/712085940_122191531334784629_7772190047045329470_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714966139_122191531640784629_4640459464499498237_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714023897_122191530794784629_3134159142848518943_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714765859_122191531466784629_4461049463347630354_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/689017766_122111724813283319_8652364059899536194_n.jpg",
+    alt: "Koncert MoPZ Prijatelji - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/695797185_122111724627283319_4086533062471663901_n.jpg",
+    alt: "Koncert MoPZ Prijatelji - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/688688077_122111724819283319_8808289617335077896_n.jpg",
+    alt: "Koncert MoPZ Prijatelji - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/689491481_122111717265283319_2662171166490739142_n.jpg",
+    alt: "Dogodka v Trebnjem in Šentrupertu - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/690375577_122111717163283319_7029146247173436606_n.jpg",
+    alt: "Dogodka v Trebnjem in Šentrupertu - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/689219345_122111717325283319_6617259521535146860_n.jpg",
+    alt: "Dogodka v Trebnjem in Šentrupertu - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/693236709_122111717037283319_9080433782376389695_n.jpg",
+    alt: "Dogodka v Trebnjem in Šentrupertu - april 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260310_183942.jpg",
     alt: "Glasbena šola Trebnje - marec 2026",
   },

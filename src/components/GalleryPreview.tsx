@@ -15,12 +15,12 @@ const previewImages = [
     alt: "Prireditev",
   },
   {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20251125_185323_uo5ss0.jpg",
-    alt: "Prireditev - november 2025",
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714444450_122191529606784629_984381086034513122_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
   },
   {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20251122_170703_k7moi9.jpg",
-    alt: "Prireditev - november 2025",
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_210151.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
   },
   {
     src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_203559_kwlenz.jpg",
