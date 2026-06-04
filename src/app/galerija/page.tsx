@@ -94,6 +94,22 @@ const images = [
     alt: "4. oddelčni nastop petja - april 2026",
   },
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/669708577_122108429277283319_1906361605746229906_n.jpg",
+    alt: "Dvojni glasbeni četrtek - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/667317595_122108429313283319_8611200219324155769_n.jpg",
+    alt: "Dvojni glasbeni četrtek - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/668615181_122108429181283319_7443055564889348457_n.jpg",
+    alt: "Dvojni glasbeni četrtek - april 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/669836763_122108429283283319_3478394165303830712_n.jpg",
+    alt: "Dvojni glasbeni četrtek - april 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260310_183942.jpg",
     alt: "Glasbena šola Trebnje - marec 2026",
   },
