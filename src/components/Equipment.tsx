@@ -79,9 +79,9 @@ export default function Equipment() {
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <h3 className="text-lg font-bold text-white mb-1">Digitalna mešalna miza</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                Digitalni mešalni pulti Behringer z brezžičnim upravljanjem,
-                večkanalnim snemanjem in profesionalnimi zvočnimi efekti. Popoln
-                nadzor nad zvokom v realnem času.
+                Digitalni mešalni pulti Behringer (WING Rack + S16, X32, XR18) z
+                brezžičnim upravljanjem, večkanalnim snemanjem in profesionalnimi
+                zvočnimi efekti. Popoln nadzor nad zvokom v realnem času.
               </p>
             </div>
           </div>
@@ -324,6 +324,10 @@ export default function Equipment() {
                   Mešalna miza
                 </h3>
                 <ul className="space-y-2 text-sm text-text-secondary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-0.5">&#9679;</span>
+                    <span><strong className="text-text-primary">Behringer WING Rack</strong> + <strong className="text-text-primary">S16</strong> expansion — digitalni mikser z stage box razširitvijo</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-0.5">&#9679;</span>
                     <span><strong className="text-text-primary">Behringer X32 Compact</strong> — 32-kanalni digitalni mikser</span>
