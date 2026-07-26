@@ -1,5 +1,5 @@
 ---
-title: "Hamo & Tribute 2 Love band v Trebnjem 🎸🎤"
+title: "Hamo & Tribute 2 Love band 🎸🎤"
 date: "2026-06-27"
 excerpt: "Hamo & Tribute 2 Love v parku Trebnje — KŠOT za organizacijo, JMA Zvok za ozvočenje in osvetlitev. Odlično vzdušje!"
 image: "https://jma-zvok-cdn.b-cdn.net/Novice/734747343_122116498437283319_2008737556637189750_n.jpg"

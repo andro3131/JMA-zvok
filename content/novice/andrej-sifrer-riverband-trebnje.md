@@ -1,5 +1,5 @@
 ---
-title: "Andrej Šifrer & Riverband v Trebnjem 🎸🎤"
+title: "Andrej Šifrer & Riverband 🎸🎤"
 date: "2026-07-25"
 excerpt: "Andrej Šifrer & Riverband v Trebnjem v organizaciji KŠOT — odlično vzdušje, vrhunska postrežba in glasba, kot se za takšne legende spodobi."
 image: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210227.jpg"
