@@ -269,166 +269,172 @@ export default function Equipment() {
               </div>
             </div>
 
-            {/* Equipment lists */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Zvočni sistem */}
-              <div>
-                <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
-                  </svg>
-                  Zvočni sistem
-                </h3>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Yamaha DZR12</strong> — 2× aktivni zvočnik</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Yamaha DSR112</strong> — 2× aktivni zvočnik</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVA S30N</strong> — nizkotonec (sub)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVA S10 DP</strong> — 2× nizkotonec (sub)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVX D15 HP</strong> — 2× aktivni zvočnik</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">dB Technologies DVX D12 HP</strong> — 2× aktivni zvočnik</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">LD Systems DAVE 15 G3</strong> — kompaktni aktivni sistem</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">the box PA 302 A</strong> — 2× aktivni monitorji</span>
-                  </li>
-                </ul>
+            {/* Equipment lists — 2 neodvisna stolpca (ne grid flow po vrsticah) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
+              {/* LEVI stolpec */}
+              <div className="flex flex-col gap-8">
+                {/* Zvočni sistem */}
+                <div>
+                  <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                    </svg>
+                    Zvočni sistem
+                  </h3>
+                  <ul className="space-y-2 text-sm text-text-secondary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Yamaha DZR12</strong> — 2× aktivni zvočnik</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Yamaha DSR112</strong> — 2× aktivni zvočnik</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">dB Technologies DVA S30N</strong> — nizkotonec (sub)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">dB Technologies DVA S10 DP</strong> — 2× nizkotonec (sub)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">dB Technologies DVX D15 HP</strong> — 2× aktivni zvočnik</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">dB Technologies DVX D12 HP</strong> — 2× aktivni zvočnik</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">LD Systems DAVE 15 G3</strong> — kompaktni aktivni sistem</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">the box PA 302 A</strong> — 2× aktivni monitorji</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Mikrofoni & oprema */}
+                <div>
+                  <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                    </svg>
+                    Mikrofoni &amp; oprema
+                  </h3>
+                  <ul className="space-y-2 text-sm text-text-secondary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Mikrofoni</strong> <strong className="text-text-primary">Shure</strong> (Beta58, Sm57, Sm58, Sm81, Beta52, Beta57 itd), <strong className="text-text-primary">Rode</strong> (M2, NT5), <strong className="text-text-primary">Electro‑Voice</strong> (RE20), <strong className="text-text-primary">Beyerdynamic</strong> (MCE 83), <strong className="text-text-primary">AKG</strong> (C451B), <strong className="text-text-primary">SE Electronics</strong> (SE4400A), <strong className="text-text-primary">Audio Technica</strong> (AT 4033), <strong className="text-text-primary">Audix</strong> DPS drum set in ostali</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Apple MacBook Pro 16 M1</strong> — za brezžično upravljanje mešalnih miz</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Apple MacBook Pro 16 M4</strong> — za večkanalno snemanje</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Apple iPad Pro 11 M4</strong> — za brezžično upravljanje mešalne mize</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Apple iPad 4</strong> — za brezžično upravljanje mešalne mize</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Mešalna miza */}
-              <div>
-                <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-                  </svg>
-                  Mešalna miza
-                </h3>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Behringer WING Rack</strong> + <strong className="text-text-primary">S16</strong> expansion — digitalni mikser z stage box razširitvijo</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Behringer X32 Compact</strong> — 32-kanalni digitalni mikser</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Behringer X Air XR18</strong> — 18-kanalni digitalni mikser, brezžično upravljanje, večkanalno snemanje</span>
-                  </li>
-                </ul>
-              </div>
+              {/* DESNI stolpec */}
+              <div className="flex flex-col gap-8">
+                {/* Mešalna miza */}
+                <div>
+                  <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                    </svg>
+                    Mešalna miza
+                  </h3>
+                  <ul className="space-y-2 text-sm text-text-secondary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Behringer WING Rack</strong> + <strong className="text-text-primary">S16</strong> expansion — digitalni mikser z stage box razširitvijo</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Behringer X32 Compact</strong> — 32-kanalni digitalni mikser</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Behringer X Air XR18</strong> — 18-kanalni digitalni mikser, brezžično upravljanje, večkanalno snemanje</span>
+                    </li>
+                  </ul>
+                </div>
 
-              {/* Mikrofoni & oprema */}
-              <div>
-                <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
-                  </svg>
-                  Mikrofoni &amp; oprema
-                </h3>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Mikrofoni</strong> <strong className="text-text-primary">Shure</strong> (Beta58, Sm57, Sm58, Sm81, Beta52, Beta57 itd), <strong className="text-text-primary">Rode</strong> (M2, NT5), <strong className="text-text-primary">Electro‑Voice</strong> (RE20), <strong className="text-text-primary">Beyerdynamic</strong> (MCE 83), <strong className="text-text-primary">AKG</strong> (C451B), <strong className="text-text-primary">SE Electronics</strong> (SE4400A), <strong className="text-text-primary">Audio Technica</strong> (AT 4033), <strong className="text-text-primary">Audix</strong> DPS drum set in ostali</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M1</strong> — za brezžično upravljanje mešalnih miz</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Apple MacBook Pro 16 M4</strong> — za večkanalno snemanje</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Apple iPad Pro 11 M4</strong> — za brezžično upravljanje mešalne mize</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Apple iPad 4</strong> — za brezžično upravljanje mešalne mize</span>
-                  </li>
-                </ul>
-              </div>
+                {/* Osvetlitev */}
+                <div>
+                  <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                    Osvetlitev
+                  </h3>
+                  <ul className="space-y-2 text-sm text-text-secondary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Cameo Root Par</strong> — 8 kos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Shehds LED Par</strong> — 4 kos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Shehds Spot Moving Head</strong> — 4 kos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span>DMX krmilnik</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Stairville rampa</strong> — 6 m</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span>Dimni stroj</span>
+                    </li>
+                  </ul>
+                </div>
 
-              {/* Osvetlitev */}
-              <div>
-                <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-                  </svg>
-                  Osvetlitev
-                </h3>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Cameo Root Par</strong> — 8 kos</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Shehds LED Par</strong> — 4 kos</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Shehds Spot Moving Head</strong> — 4 kos</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>DMX krmilnik</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Stairville rampa</strong> — 6 m</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span>Dimni stroj</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Video */}
-              <div>
-                <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-                  </svg>
-                  Video
-                </h3>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Panasonic Lumix GH7</strong> — 4K kamera</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">Panasonic Lumix GH5</strong> — 4K kamera</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-0.5">&#9679;</span>
-                    <span><strong className="text-text-primary">DJI Mini Pro 3</strong> — dron za snemanje iz zraka</span>
-                  </li>
-                </ul>
+                {/* Video */}
+                <div>
+                  <h3 className="text-lg font-bold text-accent mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                    Video
+                  </h3>
+                  <ul className="space-y-2 text-sm text-text-secondary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Panasonic Lumix GH7</strong> — 4K kamera</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">Panasonic Lumix GH5</strong> — 4K kamera</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5">&#9679;</span>
+                      <span><strong className="text-text-primary">DJI Mini Pro 3</strong> — dron za snemanje iz zraka</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
