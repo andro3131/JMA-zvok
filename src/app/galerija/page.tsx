@@ -26,6 +26,30 @@ const images = [
     alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
   },
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/734747343_122116498437283319_2008737556637189750_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/732619903_122116498503283319_6986856663914645423_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/732733419_122116498467283319_8767393909030510909_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/732961644_122116509525283319_7209774209613652907_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/733040709_122116498617283319_2244865329695207871_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/733529546_122116509729283319_7554222715615073182_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_210151.jpg",
     alt: "Adi Smolar v Trebnjem - maj 2026",
   },
