@@ -7,28 +7,28 @@ import ScrollReveal from "./ScrollReveal";
 
 const previewImages = [
   {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20260213_215234_nzfknc.jpg",
-    alt: "Prireditev - februar 2026",
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/714765859_122191531466784629_4461049463347630354_n.jpg",
+    alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
   },
   {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9170_lp1kk8.jpg",
-    alt: "Prireditev",
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210339.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/734747343_122116498437283319_2008737556637189750_n.jpg",
+    alt: "Hamo & Tribute 2 Love, Trebnje - junij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_203308.jpg",
+    alt: "Adi Smolar v Trebnjem - maj 2026",
   },
   {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/714444450_122191529606784629_984381086034513122_n.jpg",
     alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
   },
   {
-    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_210151.jpg",
-    alt: "Adi Smolar v Trebnjem - maj 2026",
-  },
-  {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_203559_kwlenz.jpg",
-    alt: "Prireditev - maj 2025",
-  },
-  {
-    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/20250531_185810_fzqhj8.jpg",
-    alt: "Prireditev - maj 2025",
+    src: "https://jma-zvok-cdn.b-cdn.net/Galerija/IMG_9170_lp1kk8.jpg",
+    alt: "ZMKS obletnica - februar 2026",
   },
 ];
 
