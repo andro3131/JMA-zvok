@@ -6,6 +6,26 @@ import Link from "next/link";
 
 const images = [
   {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210227.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210244.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210330.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210339.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
+    src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210343.jpg",
+    alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260530_210151.jpg",
     alt: "Adi Smolar v Trebnjem - maj 2026",
   },
