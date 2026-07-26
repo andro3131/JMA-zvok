@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <NovicePreview />
       <Services />
       <About />
       <Equipment />
       <GalleryPreview />
-      <NovicePreview />
       <Contact />
     </>
   );
