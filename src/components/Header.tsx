@@ -5,9 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "/#storitve", label: "Storitve" },
   { href: "/#novice", label: "Novice" },
   { href: "/#o-nas", label: "O nas" },
+  { href: "/#storitve", label: "Storitve" },
   { href: "/#oprema", label: "Oprema" },
   { href: "/galerija", label: "Galerija" },
   { href: "/#kontakt", label: "Kontakt" },
