@@ -7,6 +7,14 @@ import ScrollReveal from "./ScrollReveal";
 
 const previewImages = [
   {
+    src: "/novice/na-poti-uspeha-1.jpg",
+    alt: "Na poti uspeha, Trebnje - september 2026",
+  },
+  {
+    src: "/novice/zmzl-mirna-1.jpg",
+    alt: "46. Za Mirno z ljubeznijo, Mirna - september 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/714765859_122191531466784629_4461049463347630354_n.jpg",
     alt: "Koncert Maje Marinčič na gradu Žužemberk - maj 2026",
   },

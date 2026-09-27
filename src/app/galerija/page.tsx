@@ -6,6 +6,18 @@ import Link from "next/link";
 
 const images = [
   {
+    src: "/novice/na-poti-uspeha-1.jpg",
+    alt: "Na poti uspeha, Trebnje - september 2026",
+  },
+  {
+    src: "/novice/zmzl-mirna-1.jpg",
+    alt: "46. Za Mirno z ljubeznijo, Mirna - september 2026",
+  },
+  {
+    src: "/novice/zmzl-mirna-2.jpg",
+    alt: "46. Za Mirno z ljubeznijo (FOH), Mirna - september 2026",
+  },
+  {
     src: "https://jma-zvok-cdn.b-cdn.net/Novice/20260725_210227.jpg",
     alt: "Andrej Šifrer & Riverband, Trebnje - julij 2026",
   },
